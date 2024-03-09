@@ -1,0 +1,12 @@
+https://github.com/acnaweb/microservices-2024
+
+Spring Initializer (Todas as configurações estão no repositório "ping-2024")
+
+PingApplication.java > RunAs > Java Application > Maven clean ... Maven install
+
+<build>
+   <finalName>app</finalName>
+
+src/main/resources > application-{dev,prd,stg}.properties > server.port=8080
+
+docker run -d -p 8080:8080 -e PROFILE=prd enricotmfiap/ping
